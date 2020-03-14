@@ -35,3 +35,17 @@ var upperChoice = confirm("Include UPPERCASE characters? Click OK for YES or CAN
 var numChoice = confirm("Include numbers? Click OK for YES or CANCEL for NO:");
 var symbolChoice = confirm("Include special characters? Click OK for YES or CANCEL for NO:");
 var charList = "";
+
+//if statements that determine the password's characters type according to user's choice:
+if (lowerChoice) {
+  charList += lowercase;
+}
+if (upperChoice) {
+  charList += uppercase;
+}
+if (numChoice) {
+  charList += numbers;
+}
+if (symbolChoice) {
+  charList += symbols;
+}
