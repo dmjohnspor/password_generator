@@ -51,7 +51,7 @@ if (symbolChoice) {
 }
 
 // Function that generates the password according to above choices:
-function randomPassword(length) {
+var randomPassword = function (length) {
   var pwd = "";
   for (var i = 0; i < length; i++) {
 
@@ -59,4 +59,4 @@ function randomPassword(length) {
   }
   return pwd;
 }
-console.log(randomPassword(lengthChoice));
+// console.log(randomPassword(lengthChoice));
