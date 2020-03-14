@@ -49,3 +49,14 @@ if (numChoice) {
 if (symbolChoice) {
   charList += symbols;
 }
+
+// Function that generates the password according to above choices:
+function randomPassword(length) {
+  var pwd = "";
+  for (var i = 0; i < length; i++) {
+
+    pwd += charList.charAt(Math.floor(Math.random() * charList.length));
+  }
+  return pwd;
+}
+console.log(randomPassword(lengthChoice));
