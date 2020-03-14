@@ -60,3 +60,8 @@ var randomPassword = function (length) {
   return pwd;
 }
 // console.log(randomPassword(lengthChoice));
+
+// Function that generates the desired password when the button is clicked
+function generatePassword() {
+  return (randomPassword(lengthChoice));
+}
