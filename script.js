@@ -19,11 +19,11 @@ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
 var symbols = "!@#$%^&*()_+";
 
-// Alert that start the app:
+// Alert that starts the app:
 alert("Let's get started! Please select from the following:")
 
 // Code that prompts for the password length:
-var lengthChoice = +prompt("How many characters? Please choose between 8 and 128:");
+var lengthChoice = prompt("How many characters? Please choose between 8 and 128:");
 
 while (lengthChoice < 8 || lengthChoice > 128) {
   var lengthChoice = prompt("Please choose between 8 and 128:");
@@ -34,9 +34,10 @@ var lowerChoice = confirm("Include lowercase characters? Click OK for Yes or CAN
 var upperChoice = confirm("Include UPPERCASE characters? Click OK for YES or CANCEL for NO:");
 var numChoice = confirm("Include numbers? Click OK for YES or CANCEL for NO:");
 var symbolChoice = confirm("Include special characters? Click OK for YES or CANCEL for NO:");
-var charList = "";
 
 //if statements that determine the password's characters type according to user's choice:
+var charList = "";
+
 if (lowerChoice) {
   charList += lowercase;
 }
@@ -48,6 +49,10 @@ if (numChoice) {
 }
 if (symbolChoice) {
   charList += symbols;
+}
+if (lowerChoice === false && upperChoice === false && numChoice === false && symbolChoice === false) {
+  alert("ERROR! Password neads at least one type of characters. Please start over!");
+  history.go(0);
 }
 
 // Function that generates the password according to above choices:
