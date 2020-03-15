@@ -1,8 +1,8 @@
 # Ioannis Sporidis-Foster Portfolio
 
 Web based password generator.
-Password is generated after the user answers a series of question about their preferences on the type of characters they want their password to contain.
-This projects is part of my UPenn LPS Coding Bootcamp studies (homework 3).
+Password is generated after the user answers a series of question about their preferences on the type of characters they want their password to contain. <br>
+This project is part of my UPenn LPS Coding Bootcamp studies (homework 3).
 
 ### Installing
 
